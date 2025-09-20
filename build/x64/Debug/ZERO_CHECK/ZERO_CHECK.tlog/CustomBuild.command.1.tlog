@@ -1,0 +1,10 @@
+^D:\ITMO\PRACTICE-1\BUILD\CMAKEFILES\EFD18BC524380F1AEEFDD34719E39C2F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/itmo/practice-1 -BD:/itmo/practice-1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/itmo/practice-1/build/neatcounter.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
