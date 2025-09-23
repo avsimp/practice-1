@@ -36,11 +36,11 @@ int main(int argc, char* argv[]) {
 	char* file_name = NULL;
 
 	for (int i = 0; i < argc; i++){
-		if (strcmp(argv[i], "--word") == 0){
+		if (strcmp(argv[i], "--word") == 0 && i < argc - 1){
 			base_word = argv[i+1];
 			i++;
 		}
-		else if (strcmp(argv[i], "--file") == 0){
+		else if (strcmp(argv[i], "--file") == 0 && i < argc - 1){
 			file_name = argv[i+1];
 			i++;
 		}
